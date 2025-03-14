@@ -38,6 +38,7 @@ public class Playwright_UI_Test {
     public  void testTheUiContent(){
         page.navigate("https://www.genymotion.com/");
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Latest News")).first().click();
+
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Products")).first().hover();
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Genymotion SaaS")).first().click();
     }
