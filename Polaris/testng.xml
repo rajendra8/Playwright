@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Polaris app " verbose="1"  >
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Google search and drawing">
+       <classes>
+        <class name="tests.GoogleTest"/>
+    </classes>
+    </test>
+    <test name="Order from app">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+
+    </test>
+</suite>
